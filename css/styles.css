@@ -1,0 +1,160 @@
+.main-header, 
+.main-footer {
+    background-color: #D9C38C;
+}
+ 
+.social-block, 
+.subscribe-block, 
+.search-block, 
+.tags-block {
+    border-bottom: 2px solid #DED59C;
+}
+
+.logo {
+    height: 100px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+input {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #DED59C;
+    background-color: transparent;
+}
+
+input[type="submit"] {
+    background-color: #DED59C;
+    color: white;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #A47737;
+}
+
+.main-header .social img {
+    width: 40px;
+    height: 40px;
+}
+
+.main-header .social li:first-child {
+    margin-right: 100px;
+}
+
+.main-header .menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.main-content article {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main-content section {
+    border: 2px solid #DED59C;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+section h2 {
+    margin: 0;
+}
+
+.card-img-container {
+    overflow: hidden;
+    width: 200px;
+}
+
+.card-img {
+    display: block;
+    transition: all 1s ease-out;
+    width: 100%;
+}
+
+section:hover .card-img {
+    transform: scale(1.5);
+}
+
+section .n-comments img {
+    width: 15px;
+    height: 15px;
+}
+
+section .description {
+    text-align: justify;
+}
+
+section p:last-child {
+    margin: 0;
+}
+
+.author-info,
+.other-info {
+    border: 2px solid #DED59C;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.author-info img {
+    max-height: 100px;
+}
+
+.other-info {
+    margin-top: 0;
+}
+
+.other-info .social-block{
+    margin-top: 0;
+}
+
+.other-info .social-block img {
+    width: 50px;
+    height: 50px;
+}
+
+.other-info .tags-block {
+    text-align: center;
+    padding: 10px;
+}
+
+.other-info .comments-block {
+    border: 1px solid #DED59C;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.other-info .comments-block img {
+    border-radius: 200px;
+    width: 50px;
+    height: 100%;
+}
+
+.other-info .comments-block h4,
+.other-info .comments-block p {
+    margin: 0 0 0 10px;
+}
+
+.other-info .comments-block span {
+    color: grey;
+    font-weight: normal; 
+    margin: 0 0 0 10px;
+    font-size: 0.7em;
+}
+
+.main-footer {
+    font-size: 20px;
+}

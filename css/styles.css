@@ -122,6 +122,7 @@ section p:last-child {
 
 .other-info .social-block{
     margin-top: 0;
+    padding: 0;
 }
 
 .other-info .social-block img {
@@ -214,5 +215,10 @@ section p:last-child {
     .other-info .search-block input[type="text"], 
     .other-info .search-block input[type="submit"] {
         flex-grow: 1;
+    }
+
+    .main-footer .logo,
+    .main-footer .contacts {
+        display: none;
     }
 }

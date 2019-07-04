@@ -1,7 +1,7 @@
 .container {
     display: grid;
     grid-template-columns: 100px 3fr 1fr 100px;
-    grid-template-rows: 140px auto auto 100px;
+    grid-template-rows: 120px auto auto 100px;
     grid-template-areas: 
         "header header header header" 
         ". content author-info ." 
@@ -77,11 +77,24 @@
 
 .main-footer {
     grid-area: footer;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-areas: 
+        "logo contacts copyrights";
+    justify-items: center;
+    align-items: center;
+}
+
+.main-footer .logo {
+    grid-area: logo;
+}
+
+.main-footer .contacts {
+    grid-area: contacts;
+}
+
+.main-footer .copyrights {
+    grid-area: copyrights;
 }
 
 @media all and (max-width: 1080px) {
@@ -108,5 +121,16 @@
     }
     .main-header .menu-icon {
         grid-area: menu-icon;
+    }
+
+    .main-footer {
+        grid-area: footer;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "copyrights";
+        justify-items: center;
+        align-items: center;
     }
 }

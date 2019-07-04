@@ -56,6 +56,10 @@ input[type="submit"]:hover {
     margin-left: 10px;
 }
 
+.main-header .menu a:hover {
+    color: #A47737;
+}
+
 .main-content article {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -104,7 +108,7 @@ section p:last-child {
     border: 2px solid #DED59C;
     border-radius: 10px;
     padding: 20px;
-    margin: 20px;
+    margin: 20px 0 20px 20px;
     text-align: center;
 }
 
@@ -157,4 +161,58 @@ section p:last-child {
 
 .main-footer {
     font-size: 20px;
+}
+
+@media all and (max-width: 1080px) {   
+    .main-header .menu,
+    .main-header .social li:nth-child(n+2) {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+        width: 45px;
+        height: 35px;
+        position: relative;
+        cursor: pointer;
+    }
+    .menu-icon span {
+        display: block;
+        position: absolute;
+        height: 8px;
+        width: 100%;
+        background: white;
+        border-radius: 10px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+    }
+    .menu-icon span:nth-child(1) {
+        top: 0px;
+    }
+    .menu-icon span:nth-child(2), 
+    .menu-icon span:nth-child(3) {
+        top: 13px;
+    }
+    .menu-icon span:nth-child(4) {
+        top: 26px;
+    }
+
+    .main-header .social li:first-child {
+        margin-right: 20px;
+    }
+
+    .main-content {
+        margin: 0 20px 0 20px;
+    }
+    .author-info {
+        margin: 20px 20px 0 20px;
+    }
+    .other-info {
+        margin: 0 20px 20px 20px;
+    }
+    .other-info .search-block input[type="text"], 
+    .other-info .search-block input[type="submit"] {
+        flex-grow: 1;
+    }
 }
